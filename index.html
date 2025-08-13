@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Product with Sidebar & contact form task 5,1,2 </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Toggle Button & sidebar -->
+    <button class="toggle-btn" id="toggle-btn"><i class="fas fa-bars"></i></button>
+
+    <div class="sidebar" id="sidebar">
+        <div class="logo text-center py-3">
+            <h2> <\> Appify </h2>
+        </div>
+        <ul class="list-unstyled">
+            <li><a href="#features"><i class="fas fa-star"></i> Features </a></li>
+            <li><a href="#testimonials"><i class="fas fa-comment"></i> Testimonials</a></li>
+            <li><a href="#pricing"><i class="fas fa-tags"></i> Pricing</a></li>
+            <li><a href="#cta"><i class="fas fa-bolt"></i> Get Started</a></li>
+        </ul>
+        <div class="text-center mt-4">
+            <button id="theme-toggle" class="btn btn-outline-light">🌙 Dark Mode</button>
+        </div>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+         <h1 class="display-5 fw-bold  text-center text-primary mt-4"> Welcome to Appify </h1>
+         <hr>
+
+        <section class="bg-light py-5">
+        <div class="container">
+        <div class="row align-items-center">
+            
+            <div class="col-md-6 mb-4 mb-md-0">
+                <img src="auther.png"  class="img-fluid rounded shadow">
+            </div>
+            <div class="col-md-6">
+                <div class="card shadow border-0">
+                    <div class="card-body text-center text-md-start p-4">
+                      <h1 class="display-5 fw-bold" style="color: #2f2f8e;">Create Websites & Apps</h1>
+
+                    
+                        <h1 class="display-5 fw-bold text-primary"> Without Writing a Single Line of Code</h1>
+                        <p class="lead mb-4  style="color: #0d0d4a; "> LCNC is a revolutionary tool that enables you to design professional websites and interactive apps without any coding skill.</p>
+                        <a href="contact.html" class="btn btn-primary btn-lg"> Start Free Trial </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+        <!-- Features -->
+        <section id="features" class="py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-4">Features</h2>
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <h5> Fast Performance 🚀</h5>
+                            <p>Lightning speed and efficiency for your daily tasks.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <h5> Cloud Sync ☁️</h5>
+                            <p>Access your data anywhere, anytime.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card h-100 p-3 shadow-sm">
+                            <h5> Secure 🛡️</h5>
+                            <p>Top-notch security to keep your data safe.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="bg-light py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-4">What Our Users Say</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card p-3 shadow-sm">
+                            <p>"I was amazed at how easy it was to use!"</p>
+                            <small>- Amina Amr</small>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-3 shadow-sm">
+                            <p>"Intuitive, fast, and reliable. Highly recommended."</p>
+                            <small>- Mariam Saleh</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pricing -->
+        <section id="pricing" class="py-5">
+            <div class="container text-center">
+                <h2 class="fw-bold mb-4">Pricing</h2>
+                <div class="row g-4">
+                    <div class="col-md-6">
+                        <div class="card p-4 shadow-sm">
+                            <h3>Basic</h3>
+                            <p class="display-6">$9<span class="fs-6">/month</span></p>
+                            <a href="contact.html" class="btn btn-outline-primary">Choose Plan</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card p-4 shadow-sm">
+                            <h3>Pro</h3>
+                            <p class="display-6">$19<span class="fs-6">/month</span></p>
+                            <a href="contact.html" class="btn btn-outline-primary">Choose Plan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Call to Action -->
+        <section id="cta" class="bg-primary text-white text-center py-5">
+            <div class="container">
+                <h2 class="fw-bold">Ready to Boost Your Productivity?</h2>
+                <a href="contact.html" class="btn btn-primary btn-lg mt-3">
+                     Contant US </a>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-center py-3">
+            <p class="mb-0">&copy; 2025 TechBrand. All rights reserved.</p>
+        </footer>
+    </div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+    background-color: aliceblue;
+    
+    
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #4083be;
+    color: #fff;
+    padding-top: 20px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+.sidebar.active {
+    left: 0;
+}
+.sidebar .logo {
+    font-size: 1.5em;
+    background: #4083be;
+}
+.sidebar ul li {
+    padding: 15px;
+    border-bottom: 1px solid #333;
+}
+.sidebar ul li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.sidebar ul li a i {
+    margin-right: 10px;
+}
+
+/* Toggle Button */
+.toggle-btn {
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    font-size: 20px;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 10px 12px;
+    cursor: pointer;
+    border-radius: 5px;
+    z-index: 1100;
+}
+
+/* Main Content */
+.content {
+    transition: margin-left 0.3s ease;
+}
+.sidebar.active ~ .content {
+    margin-left: 250px;
+}
+
+/* Hover effect for cards */
+.card {
+    color: #21003e;
+    border: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Dark mode for cards */
+body.bg-dark .card {
+    background-color: #222222;
+    color: #fff;
+}
